@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import CountDown from "./CountDown";
 
 function App() {
+  const hoursMinSecs = { hours: 1, minutes: 0, seconds: 0 };
+
   return (
     <div className="App">
-      <h1>Kamvalethu</h1>
+      <CountDown hoursMinSecs={hoursMinSecs} />
     </div>
   );
 }
